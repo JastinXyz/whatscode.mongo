@@ -14,9 +14,14 @@ module.exports = class WhatscodeMongo {
 
     this.model = mongoose.model("model", { name: String, value: String });
   }
-  set(name, value) {
-    const s = new this.model({ name, value });
-    s.save();
+  async set(name, value) {
+    const has = await this.model.exists({ name });
+    if(has) {
+      await this.model.updateOne({ name }, { value })
+    } else {
+      const s = new this.model({ name, value });
+      s.save();
+    }
   }
 
   all() {
@@ -31,5 +36,9 @@ module.exports = class WhatscodeMongo {
   async has(n) {
     const a = await this.model.exists({ name: n });
     return a ? true : false;
+  }
+
+  async delete(n) {
+    await this.model.deleteOne({ name: n })
   }
 };
