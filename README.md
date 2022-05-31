@@ -4,7 +4,7 @@ Custom MongoDb database support for [whatscode.js](https://github.com/JastinXyz/
 
 > Uh? you don't know what [**whatscode.js**](https://github.com/JastinXyz/whatscode.js) is? whatscode.js is a package to create Whatsapp bots easily and quickly, even coding experience is not really needed...
 
-⚠️ To use a custom database in whatscode.js you need the version of whatscode.js installed from github. Because for now in the npm version, whatscode.js doesn't support custom databases yet (custom databases will be added in the next version of npm)
+⚠️ To use a custom database in whatscode.js you need the version of whatscode.js installed from github. Because for now in the npm version, whatscode.js doesn't support custom databases yet (custom databases will be added in the next version of whatscode.js in npm)
 
 ```bash
 npm i github:JastinXyz/whatscode.js
