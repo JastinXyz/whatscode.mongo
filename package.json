@@ -1,0 +1,23 @@
+{
+  "name": "whatscode.mongo",
+  "version": "1.0.0",
+  "description": "Custom MongoDb database support for whatscode.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JastinXyz/whatscode.mongo.git"
+  },
+  "keywords": ["whatscode", "whatscode.js", "whatscode-custom-database", "whatscode-custom-db", "custom-db", "database", "whatscode-database", "db", "mongodb", "mongoose"],
+  "author": "JastinLT <jastinlinggar@gmail.com> (https://jstnlt.my.id)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JastinXyz/whatscode.mongo/issues"
+  },
+  "homepage": "https://github.com/JastinXyz/whatscode.mongo#readme",
+  "dependencies": {
+    "mongoose": "^6.3.5"
+  }
+}
